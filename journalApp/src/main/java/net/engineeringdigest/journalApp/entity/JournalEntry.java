@@ -12,20 +12,14 @@ import java.time.LocalDateTime;
 import java.util.Date;
 
 @Document(collection = "journal_entries")
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
-@Slf4j
-@EqualsAndHashCode
-@Builder
+@Data
 public class JournalEntry {
 
 
     @Id
     private ObjectId id;
 
+    @NonNull
     private String title;
 
     private String content;
