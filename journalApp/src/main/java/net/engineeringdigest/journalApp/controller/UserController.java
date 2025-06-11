@@ -31,9 +31,9 @@ public class UserController {
 
     }
 
-    @PutMapping
-    public ResponseEntity<?> updateUser(@RequestBody Users user){
-        Users userInDb = userService.FindBbyusername(user.getUsername());
+    @PutMapping("{username}")
+    public ResponseEntity<?> updateUser(@RequestBody Users user,@PathVariable String username){
+        Users userInDb = userService.FindBbyusername(username);
         if(userInDb != null){
             userInDb.setUsername(user.getUsername());
             userInDb.setPassword(user.getPassword());
