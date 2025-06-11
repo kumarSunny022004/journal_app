@@ -64,19 +64,21 @@ public class JournalEntryControllerV2 {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-//    @PutMapping("id/{myId}")
-//    public ResponseEntity<?> update(@RequestBody JournalEntry newEntry, @PathVariable ObjectId myId) {
-//        JournalEntry old = journalEntryService.findById(myId).orElse(null);
-//
-//        if (old != null) {
-//            old.setTitle(newEntry.getTitle() != null && !newEntry.getTitle().equals("") ? newEntry.getTitle() : old.getTitle());
-//            old.setContent(newEntry.getContent() != null && !newEntry.getContent().equals("") ? newEntry.getContent() : old.getContent());
-//
-//            journalEntryService.saveEntry(old, username);
-//            return new ResponseEntity<>(old,HttpStatus.OK);
-//        }
-//        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-//
-//    }
+    @PutMapping("id/{userName}/{myId}")
+    public ResponseEntity<?> update(@RequestBody JournalEntry newEntry,
+                                    @PathVariable ObjectId myId,
+                                    @PathVariable String userName) {
+        JournalEntry old = journalEntryService.findById(myId).orElse(null);
+
+        if (old != null) {
+            old.setTitle(newEntry.getTitle() != null && !newEntry.getTitle().equals("") ? newEntry.getTitle() : old.getTitle());
+            old.setContent(newEntry.getContent() != null && !newEntry.getContent().equals("") ? newEntry.getContent() : old.getContent());
+
+            journalEntryService.saveEntry(old);
+            return new ResponseEntity<>(old,HttpStatus.OK);
+        }
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+
+    }
 
 }
