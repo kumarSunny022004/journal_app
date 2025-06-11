@@ -16,6 +16,6 @@ public class SpringSecurity extends WebSecurityConfigurerAdapter {
        http
                .authorizeRequests()
                .antMatchers("/journal/**").authenticated()
-               .anyRequest().permitAll()
+               .anyRequest().permitAll();
     }
 }
