@@ -27,7 +27,7 @@ public class JournalEntryService {
            Users user = userService.FindBbyusername(username);
            JournalEntry saved = journalEntryRepository.save(journalEntry);
            user.getJournalentries().add(saved);
-           userService.saveEntry(user);
+           userService.saveUser(user);
        }catch (Exception e){
            System.out.println(e);
 
@@ -50,7 +50,12 @@ public class JournalEntryService {
     public void delById(ObjectId Id, String username){
         Users users = userService.FindBbyusername(username);
         users.getJournalentries().removeIf(x->x.getId().equals(Id));
-        userService.saveEntry(users);
+        userService.saveNewUser(users);
         journalEntryRepository.deleteById(Id);
+    }
+
+    public List<JournalEntry> findByUserName(String username){
+        Users user = userService.FindBbyusername(username);
+        return user.getJournalentries();
     }
 }

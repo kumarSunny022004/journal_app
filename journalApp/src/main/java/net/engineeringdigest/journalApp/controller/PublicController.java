@@ -13,8 +13,13 @@ public class PublicController {
     @Autowired
     private UserService userService;
 
+    @GetMapping("Health_check")
+    public String health_check(){
+        return "ok";
+    }
+
     @PostMapping("/create_user")
     public void adduser(@RequestBody Users user){
-        userService.saveEntry(user);
+        userService.saveNewUser(user);
     }
 }
