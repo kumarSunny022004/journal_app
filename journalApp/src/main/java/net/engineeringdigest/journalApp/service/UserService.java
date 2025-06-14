@@ -22,10 +22,15 @@ public class UserService {
 
     public static final PasswordEncoder passEncoder =  new BCryptPasswordEncoder();
 
-    public void saveNewUser(Users user){
-        user.setPassword(passEncoder.encode(user.getPassword()));
-        user.setRoles(Arrays.asList("USER"));
-        userRepository.save(user);
+    public boolean saveNewUser(Users user){
+      try {
+          user.setPassword(passEncoder.encode(user.getPassword()));
+          user.setRoles(Arrays.asList("USER"));
+          userRepository.save(user);
+          return true;
+      }catch (Exception e){
+          return false;
+      }
     }
 
     public void saveNewAdmin(Users user){

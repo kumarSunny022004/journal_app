@@ -29,7 +29,6 @@ public class AdminController {
         }
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
-
     public void createnewAdmin(@RequestBody Users user){
         userService.saveNewAdmin(user);
     }
