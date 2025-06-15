@@ -1,5 +1,6 @@
 package net.engineeringdigest.journalApp.service;
 
+import lombok.extern.slf4j.Slf4j;
 import net.engineeringdigest.journalApp.Repository.UserRepository;
 import net.engineeringdigest.journalApp.entity.JournalEntry;
 import net.engineeringdigest.journalApp.entity.Users;
@@ -17,12 +18,13 @@ import java.util.Optional;
 
 
 @Component
+@Slf4j
 public class UserService {
 
     @Autowired
     private UserRepository userRepository;
 
-    private static final Logger logger = LoggerFactory.getLogger(UserService.class);
+
 
     public static final PasswordEncoder passEncoder =  new BCryptPasswordEncoder();
 
@@ -33,7 +35,7 @@ public class UserService {
           userRepository.save(user);
           return true;
       }catch (Exception e){
-          logger.info("Duplicate");
+          log.info("Duplicate");
           return false;
       }
     }
