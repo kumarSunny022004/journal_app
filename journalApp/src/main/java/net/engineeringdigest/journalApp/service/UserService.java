@@ -4,6 +4,8 @@ import net.engineeringdigest.journalApp.Repository.UserRepository;
 import net.engineeringdigest.journalApp.entity.JournalEntry;
 import net.engineeringdigest.journalApp.entity.Users;
 import org.bson.types.ObjectId;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -20,6 +22,8 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
+    private static final Logger logger = LoggerFactory.getLogger(UserService.class);
+
     public static final PasswordEncoder passEncoder =  new BCryptPasswordEncoder();
 
     public boolean saveNewUser(Users user){
@@ -29,6 +33,7 @@ public class UserService {
           userRepository.save(user);
           return true;
       }catch (Exception e){
+          logger.info("Duplicate");
           return false;
       }
     }
