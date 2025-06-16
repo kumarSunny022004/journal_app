@@ -2,6 +2,7 @@ package net.engineeringdigest.journalApp.service;
 
 
 import net.engineeringdigest.journalApp.Repository.UserRepositoryImpl;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,6 +16,6 @@ public class UserRepositoryImpltest {
 
     @Test
     public void testSaveNewUSer(){
-        userRepository.getUserForSA();
+         Assertions.assertNotNull(userRepository.getUserForSA());
     }
 }

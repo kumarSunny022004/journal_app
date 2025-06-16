@@ -15,7 +15,8 @@ public class UserRepositoryImpl {
 
     public List<Users> getUserForSA(){
         Query query = new Query();
-       query.addCriteria(Criteria.where("username").is("Ram"));
+        query.addCriteria(Criteria.where("Email").ne("").ne(null));
+        query.addCriteria(Criteria.where("SentimentAnalysis").is(true));
        List<Users> users = mongoTemplate.find(query,Users.class);
        return users;
     }
