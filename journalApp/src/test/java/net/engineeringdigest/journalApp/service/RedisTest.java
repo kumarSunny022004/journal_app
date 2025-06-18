@@ -13,8 +13,8 @@ public class RedisTest {
     private RedisTemplate redisTemplate;
 @Test
     public void testRedis(){
-        redisTemplate.opsForValue().set("email","sfiuwefb@gmail.com");
-        Object email = redisTemplate.opsForValue().get("email");
+//        redisTemplate.opsForValue().set("email","sfiuwefb@gmail.com");
+        Object email = redisTemplate.opsForValue().get("salary");
         int a =1;
     }
 }
