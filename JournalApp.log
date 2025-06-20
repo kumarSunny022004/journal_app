@@ -5581,3 +5581,523 @@ Caused by: javax.net.ssl.SSLException: Received fatal alert: internal_error
 2025-06-18 16:58:44 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
 2025-06-18 16:59:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
 2025-06-18 16:59:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 16:59:11 INFO  n.e.journalApp.JournalApplication - Starting JournalApplication using Java 1.8.0_452 on lenovo with PID 11500 (D:\spring_boot\journalApp\journalApp\target\classes started by ks910 in D:\spring_boot\journalApp)
+2025-06-18 16:59:11 INFO  n.e.journalApp.JournalApplication - The following 1 profile is active: "prod"
+2025-06-18 16:59:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-18 16:59:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-06-18 16:59:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 122 ms. Found 3 MongoDB repository interfaces.
+2025-06-18 16:59:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-18 16:59:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-06-18 16:59:11 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.Repository.ConfigAppRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-06-18 16:59:11 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.Repository.JournalEntryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-06-18 16:59:11 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface net.engineeringdigest.journalApp.Repository.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-06-18 16:59:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2025-06-18 16:59:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-06-18 16:59:12 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-06-18 16:59:12 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-18 16:59:12 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+2025-06-18 16:59:12 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-18 16:59:12 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1377 ms
+2025-06-18 16:59:12 INFO  org.mongodb.driver.cluster - Adding discovered server ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017 to client view of cluster
+2025-06-18 16:59:12 INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./1.8.0_452-b09", "application": {"name": "Cluster0"}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='sunny123', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@210308d5]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.dri7trt.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-7qjxib-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='Cluster0', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2025-06-18 16:59:12 INFO  org.mongodb.driver.cluster - Adding discovered server ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017 to client view of cluster
+2025-06-18 16:59:12 INFO  org.mongodb.driver.cluster - Adding discovered server ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017 to client view of cluster
+2025-06-18 16:59:13 INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.client.internal.MongoClientDelegate$1@4d3c6593 from cluster description ClusterDescription{type=REPLICA_SET, connectionMode=MULTIPLE, serverDescriptions=[ServerDescription{address=ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2025-06-18 16:59:13 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:52545}] to ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017
+2025-06-18 16:59:13 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:52545}] to ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017
+2025-06-18 16:59:13 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:62698}] to ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 16:59:13 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:56536}] to ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017
+2025-06-18 16:59:13 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:56539}] to ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017
+2025-06-18 16:59:13 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:62698}] to ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 16:59:13 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=321041000, setName='atlas-7qjxib-shard-0', canonicalAddress=ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017, hosts=[ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000060, setVersion=4, topologyVersion=TopologyVersion{processId=68506ebba590a9acedb9ceef, counter=6}, lastWriteDate=Wed Jun 18 16:59:11 IST 2025, lastUpdateTimeNanos=11942167609300}
+2025-06-18 16:59:13 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=314509300, setName='atlas-7qjxib-shard-0', canonicalAddress=ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, hosts=[ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=4, topologyVersion=TopologyVersion{processId=68506c4e6aacc6832b8743f0, counter=4}, lastWriteDate=Wed Jun 18 16:59:11 IST 2025, lastUpdateTimeNanos=11942167609200}
+2025-06-18 16:59:13 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=309422200, setName='atlas-7qjxib-shard-0', canonicalAddress=ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, hosts=[ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=4, topologyVersion=TopologyVersion{processId=685071b3f97d644ab9d5e922, counter=3}, lastWriteDate=Wed Jun 18 16:59:11 IST 2025, lastUpdateTimeNanos=11942167609200}
+2025-06-18 16:59:13 INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff0000000000000060 from replica set primary ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 16:59:13 INFO  org.mongodb.driver.cluster - Setting max set version to 4 from replica set primary ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 16:59:13 INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 16:59:13 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:62513}] to ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 16:59:14 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1d3c112a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a140ce5, org.springframework.security.web.context.SecurityContextPersistenceFilter@5fdfe8cf, org.springframework.security.web.header.HeaderWriterFilter@1d4f5506, org.springframework.security.web.authentication.logout.LogoutFilter@196624bf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@531ec978, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e8b357d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6af5b246, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f71194d, org.springframework.security.web.session.SessionManagementFilter@3f9b7fe1, org.springframework.security.web.access.ExceptionTranslationFilter@18a096b5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4c07d1fc]
+2025-06-18 16:59:14 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-06-18 16:59:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2025-06-18 16:59:14 INFO  n.e.journalApp.JournalApplication - Started JournalApplication in 3.994 seconds (JVM running for 4.41)
+2025-06-18 16:59:25 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-18 16:59:25 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-18 16:59:25 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-18 16:59:26 WARN  n.e.journalApp.service.RedisService - No value found in Redis for key: Weather_ofPune
+2025-06-18 17:00:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:00:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:01:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:01:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:02:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:02:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:03:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:03:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:04:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:04:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:05:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:05:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:06:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:06:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:07:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:07:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:08:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:08:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:09:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:09:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:10:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:10:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:11:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:11:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:12:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:12:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:13:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:13:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:14:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:14:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:15:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:15:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:16:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:16:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:17:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:17:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:18:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:18:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:19:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:19:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:20:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:20:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:21:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:21:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:22:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:22:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:23:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:23:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:24:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:24:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:25:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:25:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:26:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:26:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:27:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:27:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:28:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:28:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:29:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:29:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:30:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:30:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:31:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:31:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:32:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:32:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:33:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:33:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:34:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:34:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:35:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:35:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:36:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:36:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:37:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:37:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:38:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:38:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:39:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:39:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:40:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:40:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:41:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:41:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:42:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:42:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:43:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:43:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:44:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:44:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:45:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:45:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:46:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:46:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:48:01 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:48:01 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:48:06 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:696)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:464)
+	at sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:68)
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1350)
+	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:73)
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:966)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571)
+	... 5 common frames omitted
+2025-06-18 17:48:07 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:64267}] to ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 17:48:07 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=158898400, setName='atlas-7qjxib-shard-0', canonicalAddress=ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017, hosts=[ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000060, setVersion=4, topologyVersion=TopologyVersion{processId=68506ebba590a9acedb9ceef, counter=6}, lastWriteDate=Wed Jun 18 17:48:05 IST 2025, lastUpdateTimeNanos=14876044168000}
+2025-06-18 17:48:07 INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 17:48:07 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:696)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:464)
+	at sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:68)
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1350)
+	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:73)
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:966)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571)
+	... 5 common frames omitted
+2025-06-18 17:48:07 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:696)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:464)
+	at sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:68)
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1350)
+	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:73)
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:966)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571)
+	... 5 common frames omitted
+2025-06-18 17:48:07 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:58025}] to ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017
+2025-06-18 17:48:07 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=168428200, setName='atlas-7qjxib-shard-0', canonicalAddress=ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, hosts=[ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=4, topologyVersion=TopologyVersion{processId=68506c4e6aacc6832b8743f0, counter=4}, lastWriteDate=Wed Jun 18 17:48:05 IST 2025, lastUpdateTimeNanos=14876374539400}
+2025-06-18 17:48:07 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:54023}] to ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017
+2025-06-18 17:48:07 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=180388900, setName='atlas-7qjxib-shard-0', canonicalAddress=ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, hosts=[ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=4, topologyVersion=TopologyVersion{processId=685071b3f97d644ab9d5e922, counter=3}, lastWriteDate=Wed Jun 18 17:48:05 IST 2025, lastUpdateTimeNanos=14876380069100}
+2025-06-18 17:49:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:49:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:49:00 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:64408}] to ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 17:50:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:50:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:51:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:51:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:52:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:52:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:53:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:53:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:54:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:54:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:55:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:55:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:56:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:56:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:57:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:57:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:58:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:58:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 17:59:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 17:59:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:00:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:00:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:16:11 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:16:11 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:16:11 INFO  org.mongodb.driver.cluster - No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=REPLICA_SET, connectionMode=MULTIPLE, serverDescriptions=[ServerDescription{address=ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Socket is closed}}, ServerDescription{address=ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=78040115, setName='atlas-7qjxib-shard-0', canonicalAddress=ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, hosts=[ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=4, topologyVersion=TopologyVersion{processId=685071b3f97d644ab9d5e922, counter=3}, lastWriteDate=Wed Jun 18 18:16:07 IST 2025, lastUpdateTimeNanos=16557862520899}, ServerDescription{address=ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=64072414, setName='atlas-7qjxib-shard-0', canonicalAddress=ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, hosts=[ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=4, topologyVersion=TopologyVersion{processId=68506c4e6aacc6832b8743f0, counter=4}, lastWriteDate=Wed Jun 18 18:16:07 IST 2025, lastUpdateTimeNanos=16557846202199}]}. Waiting for 30000 ms before timing out
+2025-06-18 18:16:11 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:54617}] to ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017
+2025-06-18 18:16:12 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:14, serverValue:64859}] to ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 18:16:12 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:58616}] to ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017
+2025-06-18 18:16:19 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:15, serverValue:65003}] to ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 18:16:19 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=134647100, setName='atlas-7qjxib-shard-0', canonicalAddress=ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017, hosts=[ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000060, setVersion=4, topologyVersion=TopologyVersion{processId=68506ebba590a9acedb9ceef, counter=6}, lastWriteDate=Wed Jun 18 18:16:18 IST 2025, lastUpdateTimeNanos=16568742622099}
+2025-06-18 18:16:19 INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 18:16:20 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:16, serverValue:65043}] to ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 18:17:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:17:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:18:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:18:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:19:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:19:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:20:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:20:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:21:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:21:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:22:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:22:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:23:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:23:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:24:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:24:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:25:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:25:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:26:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:26:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:31:08 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:17, serverValue:54959}] to ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017
+2025-06-18 18:31:09 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:18, serverValue:58955}] to ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017
+2025-06-18 18:31:09 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:19, serverValue:65361}] to ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 18:31:18 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:696)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:464)
+	at sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:68)
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1350)
+	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:73)
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:966)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571)
+	... 5 common frames omitted
+2025-06-18 18:31:18 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:696)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:464)
+	at sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:68)
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1350)
+	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:73)
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:966)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571)
+	... 5 common frames omitted
+2025-06-18 18:31:18 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:20, serverValue:58956}] to ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017
+2025-06-18 18:31:18 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=116702700, setName='atlas-7qjxib-shard-0', canonicalAddress=ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, hosts=[ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=4, topologyVersion=TopologyVersion{processId=68506c4e6aacc6832b8743f0, counter=4}, lastWriteDate=Wed Jun 18 18:31:16 IST 2025, lastUpdateTimeNanos=17467705145400}
+2025-06-18 18:31:18 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:21, serverValue:54961}] to ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017
+2025-06-18 18:31:18 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=114915700, setName='atlas-7qjxib-shard-0', canonicalAddress=ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, hosts=[ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=4, topologyVersion=TopologyVersion{processId=685071b3f97d644ab9d5e922, counter=3}, lastWriteDate=Wed Jun 18 18:31:16 IST 2025, lastUpdateTimeNanos=17467710453000}
+2025-06-18 18:31:19 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:696)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:464)
+	at sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:68)
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1350)
+	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:73)
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:966)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571)
+	... 5 common frames omitted
+2025-06-18 18:31:19 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:22, serverValue:65426}] to ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 18:31:19 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=108792100, setName='atlas-7qjxib-shard-0', canonicalAddress=ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017, hosts=[ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000060, setVersion=4, topologyVersion=TopologyVersion{processId=68506ebba590a9acedb9ceef, counter=6}, lastWriteDate=Wed Jun 18 18:31:18 IST 2025, lastUpdateTimeNanos=17468603081400}
+2025-06-18 18:31:19 INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 18:31:29 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:31:29 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:31:29 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:23, serverValue:65366}] to ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 18:32:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:32:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:33:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:33:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:34:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:34:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:35:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:35:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:36:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:36:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:37:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:37:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:38:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:38:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:39:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:39:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:40:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:40:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:41:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:41:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:42:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:42:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:43:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:43:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:44:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:44:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:45:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:45:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:46:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:46:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:47:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:47:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:48:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:48:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:49:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:49:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:50:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:50:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:51:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:51:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:52:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:52:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:53:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:53:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:54:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:54:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:55:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:55:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:56:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:56:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:57:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:57:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:58:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:58:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 18:59:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 18:59:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:00:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:00:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:01:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:01:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:02:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:02:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:03:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:03:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:04:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:04:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:05:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:05:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:06:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:06:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:07:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:07:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:08:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:08:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:09:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:09:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:10:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:10:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:11:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:11:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:12:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:12:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:13:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:13:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:14:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:14:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:15:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:15:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:16:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:16:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:17:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:17:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:18:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:18:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:22:08 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:22:08 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:22:08 INFO  org.mongodb.driver.cluster - No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=REPLICA_SET, connectionMode=MULTIPLE, serverDescriptions=[ServerDescription{address=ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Socket is closed}}, ServerDescription{address=ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=56007482, setName='atlas-7qjxib-shard-0', canonicalAddress=ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, hosts=[ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=4, topologyVersion=TopologyVersion{processId=685071b3f97d644ab9d5e922, counter=3}, lastWriteDate=Wed Jun 18 19:18:49 IST 2025, lastUpdateTimeNanos=20320040767000}, ServerDescription{address=ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=58756176, setName='atlas-7qjxib-shard-0', canonicalAddress=ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, hosts=[ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=4, topologyVersion=TopologyVersion{processId=68506c4e6aacc6832b8743f0, counter=4}, lastWriteDate=Wed Jun 18 19:18:49 IST 2025, lastUpdateTimeNanos=20319927357500}]}. Waiting for 30000 ms before timing out
+2025-06-18 19:22:09 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:24, serverValue:66460}] to ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 19:22:09 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=145767000, setName='atlas-7qjxib-shard-0', canonicalAddress=ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017, hosts=[ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000060, setVersion=4, topologyVersion=TopologyVersion{processId=68506ebba590a9acedb9ceef, counter=6}, lastWriteDate=Wed Jun 18 19:22:08 IST 2025, lastUpdateTimeNanos=20518798380800}
+2025-06-18 19:22:09 INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 19:22:09 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:25, serverValue:66297}] to ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 19:22:19 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:27, serverValue:60008}] to ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017
+2025-06-18 19:22:19 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:26, serverValue:55997}] to ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017
+2025-06-18 19:22:19 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:28, serverValue:66458}] to ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017
+2025-06-18 19:22:29 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:696)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:464)
+	at sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:68)
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1350)
+	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:73)
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:966)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571)
+	... 5 common frames omitted
+2025-06-18 19:22:29 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:696)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:464)
+	at sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:68)
+	at sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1350)
+	at sun.security.ssl.SSLSocketImpl.access$300(SSLSocketImpl.java:73)
+	at sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:966)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571)
+	... 5 common frames omitted
+2025-06-18 19:22:30 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:29, serverValue:60012}] to ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017
+2025-06-18 19:22:30 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=179306500, setName='atlas-7qjxib-shard-0', canonicalAddress=ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, hosts=[ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=4, topologyVersion=TopologyVersion{processId=68506c4e6aacc6832b8743f0, counter=4}, lastWriteDate=Wed Jun 18 19:22:28 IST 2025, lastUpdateTimeNanos=20539136568000}
+2025-06-18 19:22:30 INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:30, serverValue:56003}] to ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017
+2025-06-18 19:22:30 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=113175600, setName='atlas-7qjxib-shard-0', canonicalAddress=ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, hosts=[ac-ryrlurm-shard-00-00.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-02.dri7trt.mongodb.net:27017, ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017], passives=[], arbiters=[], primary='ac-ryrlurm-shard-00-01.dri7trt.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='aps1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=4, topologyVersion=TopologyVersion{processId=685071b3f97d644ab9d5e922, counter=3}, lastWriteDate=Wed Jun 18 19:22:28 IST 2025, lastUpdateTimeNanos=20539195854200}
+2025-06-18 19:23:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:23:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:24:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:24:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
+2025-06-18 19:25:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.email'. Maybe a fragment in 'String' is considered a simple type. Mapper continues with Email.
+2025-06-18 19:25:00 INFO  o.s.d.m.core.convert.QueryMapper - Could not map 'Users.sentimentAnalysis'. Maybe a fragment in 'boolean' is considered a simple type. Mapper continues with SentimentAnalysis.
