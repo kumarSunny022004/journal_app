@@ -5,7 +5,6 @@ import lombok.extern.slf4j.Slf4j;
 import net.engineeringdigest.journalApp.Cache.AppCache;
 import net.engineeringdigest.journalApp.entity.Users;
 import net.engineeringdigest.journalApp.service.UserService;
-import net.engineeringdigest.journalApp.utils.JwtUtility;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.RequestEntity;
